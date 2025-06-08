@@ -16,40 +16,40 @@ const PageMeta = () => {
   const siteUrl = "https://vehicleregistrationdetail.com";
   const canonicalUrl = `${siteUrl}${location.pathname}${location.search}`;
 
-  let title = "Vehicle Registration Lookup | Fast RTO Search India";
-  let description = "Lookup Indian vehicle registration details instantly. Fast, secure, and accurate RTO search for cars, bikes, and commercial vehicles.";
+  let title = "Vehicle Registration Lookup | Free RTO Search India";
+  let description = "Instant, secure vehicle registration lookup. Get verified RTO details for any Indian vehicle. Free, fast, and accurate.";
   const path = location.pathname;
 
   if (path === "/") {
-    title = "Vehicle Registration Lookup | Fast RTO Search India";
-    description = "Lookup Indian vehicle registration details instantly. Fast, secure, and accurate RTO search for cars, bikes, and commercial vehicles.";
+    title = "Get 100% Free Vehicle Registration Details - VehicleLookup";
+    description = "Fast and secure vehicle information lookup service. Get comprehensive vehicle details instantly with our advanced search system.";
   } else if (path === "/about") {
-    title = "About Us | Trusted Vehicle Registration Platform";
-    description = "Learn about our mission to provide reliable, up-to-date vehicle registration and RTO information for users across India.";
+    title = "About VehicleLookup | Our Mission & Team";
+    description = "Learn about VehicleLookup, our mission, vision, and the passionate team behind India's trusted vehicle registration platform.";
   } else if (path === "/contact") {
     title = "Contact Us | Vehicle Registration Support";
-    description = "Get in touch for support, feedback, or partnership inquiries related to vehicle registration and RTO lookup services.";
+    description = "Contact VehicleLookup for support, feedback, or partnership. We're here to help with all your vehicle registration and RTO queries.";
   } else if (path === "/privacy-policy") {
-    title = "Privacy Policy | Data Protection & Security";
-    description = "Read our privacy policy to understand how we protect your data and ensure secure vehicle registration searches.";
+    title = "Privacy Policy | Your Data, Our Priority";
+    description = "Read how VehicleLookup protects your privacy and data. We ensure secure, transparent handling of your vehicle search information.";
   } else if (path === "/search") {
     const vehicleParam = new URLSearchParams(location.search).get('vehicle');
     if (vehicleParam) {
       title = `Vehicle Details for ${vehicleParam} | RTO Lookup India`;
-      description = `Get RTO and registration details for vehicle number ${vehicleParam}. Fast, secure, and accurate vehicle lookup.`;
+      description = `Get verified RTO and registration details for vehicle number ${vehicleParam}. Fast, secure, and accurate lookup results.`;
     } else {
       title = "Search Vehicle Registration | Instant RTO Info";
-      description = "Search for Indian vehicle registration details and RTO information by entering a vehicle number. Accurate and fast results.";
+      description = "Enter a vehicle number to instantly search Indian RTO and registration details. Fast, accurate, and secure results every time.";
     }
   } else if (path === "/terms-of-service") {
-    title = "Terms of Service | Vehicle Registration Lookup";
-    description = "Review our terms of service for using the vehicle registration lookup platform and RTO search features.";
+    title = "Terms of Service | VehicleLookup Platform";
+    description = "Review the terms and conditions for using VehicleLookup's vehicle registration and RTO information services.";
   } else if (path === "/cookie-policy") {
-    title = "Cookie Policy | Vehicle Registration Lookup";
-    description = "Learn how we use cookies to enhance your experience on our vehicle registration and RTO lookup platform.";
+    title = "Cookie Policy | VehicleLookup";
+    description = "Learn how VehicleLookup uses cookies to enhance your experience and keep your vehicle search secure and personalized.";
   } else if (path === "/disclaimer") {
-    title = "Disclaimer | Vehicle Registration Lookup";
-    description = "Read our disclaimer regarding the accuracy and use of vehicle registration and RTO information provided on our platform.";
+    title = "Disclaimer | Vehicle Information Accuracy";
+    description = "Read our disclaimer about the accuracy and use of vehicle registration and RTO data provided by VehicleLookup.";
   }
 
   // Global WebSite schema
