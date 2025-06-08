@@ -92,7 +92,7 @@ const CookiePolicyPage = () => {
                     <CardTitle className="text-2xl font-bold text-gray-900">Contact Us</CardTitle>
                 </CardHeader>
                 <CardContent className="text-gray-600 leading-relaxed">
-                    <p>If you have any questions about our use of cookies, please contact us at privacy@vehiclelookup.com.</p>
+                    <p>If you have any questions about our use of cookies, please contact us at info@vehicleregistrationdetail.com.</p>
                 </CardContent>
             </Card>
 

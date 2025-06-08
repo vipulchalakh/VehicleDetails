@@ -52,15 +52,15 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-sm text-gray-300">
                 <Mail className="h-4 w-4" />
-                <span>info@vehiclelookup.com</span>
+                <span>info@vehicleregistrationdetail.com</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-gray-300">
                 <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+918766994595</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-gray-300">
                 <MapPin className="h-4 w-4" />
-                <span>123 Tech Street, Digital City</span>
+                <span>29, IT Park, Nagpur(M.H) - 440028</span>
               </div>
             </div>
           </div>

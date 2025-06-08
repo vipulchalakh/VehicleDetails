@@ -45,21 +45,21 @@ const ContactPage = () => {
       icon: Mail,
       title: 'Email Us',
       description: 'Send us an email anytime for vehicle number search support',
-      contact: 'support@vehiclelookup.com',
-      action: 'mailto:support@vehiclelookup.com'
+      contact: 'info@vehicleregistrationdetail.com',
+      action: 'mailto:info@vehicleregistrationdetail.com'
     },
     {
       icon: Phone,
       title: 'Call Us',
       description: 'Speak with our support team about RTO information',
-      contact: '+1 (555) 123-4567',
-      action: 'tel:+15551234567'
+      contact: '+918766994595',
+      action: 'tel:+918766994595'
     },
     {
       icon: MapPin,
       title: 'Visit Us',
       description: 'Come to our office (for vehicle registration detail queries by appointment)',
-      contact: '123 Tech Street, Digital City, DC 12345',
+      contact: '29, IT Park, Nagpur(M.H) - 440028',
       action: '#'
     },
     {
@@ -216,7 +216,7 @@ const ContactPage = () => {
                             value={formData.email}
                             onChange={handleInputChange}
                             className="h-12"
-                            placeholder="your.email@example.com"
+                            placeholder="info@vehicleregistrationdetail.com"
                             aria-label="Email Address"
                           />
                         </div>

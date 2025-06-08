@@ -230,7 +230,7 @@ const PrivacyPage = () => {
                     <li>Correction: Request correction of inaccurate vehicle registration details.</li>
                   </ul>
                    <p className="text-gray-600 leading-relaxed mt-4">
-                    To exercise these rights for your vehicle lookup data, please contact us at privacy@vehiclelookup.com.
+                    To exercise these rights for your vehicle lookup data, please contact us at info@vehicleregistrationdetail.com.
                   </p>
                 </CardContent>
               </Card>
@@ -267,7 +267,7 @@ const PrivacyPage = () => {
                     please contact us:
                   </p>
                   <div className="space-y-2 text-blue-100">
-                    <p>Email: privacy@vehiclelookup.com</p>
+                    <p>Email: info@vehicleregistrationdetail.com</p>
                   </div>
                 </CardContent>
               </Card>

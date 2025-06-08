@@ -10,49 +10,49 @@ const AboutPage = () => {
     {
       icon: Shield,
       title: 'Security First',
-      description: 'We prioritize the security and privacy of your data with enterprise-grade protection for every vehicle number search.',
+      description: 'Your data matters. We use government-grade encryption and best-in-class security practices to protect every vehicle number search.',
     },
     {
       icon: Zap,
       title: 'Lightning Fast',
-      description: 'Our optimized infrastructure delivers RTO information and vehicle registration details in seconds, not minutes.',
+      description: 'No more waiting. Get instant access to vehicle registration details—from owner information to RTO codes—within seconds.',
     },
     {
       icon: Heart,
       title: 'User-Centric',
-      description: 'Every feature for vehicle lookup is designed with our users\' needs and experience in mind.',
+      description: 'Every detail, every button, every update is designed with real Indian users in mind—from urban buyers to rural transporters.',
     },
     {
       icon: Globe,
       title: 'Always Available',
-      description: '24/7 uptime ensures you can access vehicle information and RTO details whenever you need it.',
+      description: 'Vehicle needs don\'t sleep. Our platform runs everyday so you can access RTO vehicle data anytime, anywhere in India.',
     },
   ];
 
   const team = [
     {
-      name: 'Sarah Johnson',
+      name: 'Ananya Verma',
       role: 'CEO & Founder',
-      description: 'Visionary leader with 15+ years in automotive technology and RTO data systems.',
-      imageUrl: 'https://images.unsplash.com/photo-1580894742487-9f3a786eaa88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2VvJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=100&q=60'
+      description: 'Visionary entrepreneur with a decade of experience in mobility tech and transport data systems.',
+      imageUrl: '/ananya-verma.png',
     },
     {
-      name: 'Michael Chen',
+      name: 'Arjun Patel',
       role: 'CTO',
-      description: 'Technical expert specializing in database architecture for vehicle registration details and API development.',
-      imageUrl: 'https://images.unsplash.com/photo-1600878459398-325a73c3f553?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3RvJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=100&q=60'
+      description: 'Backend genius responsible for building our fast, scalable platform that handles millions of RTO lookups every month.',
+      imageUrl: '/arjun-patel.png',
     },
     {
-      name: 'Emily Rodriguez',
+      name: 'Kavita Rao',
       role: 'Head of Security',
-      description: 'Cybersecurity specialist ensuring the highest standards of data protection for vehicle number searches.',
-      imageUrl: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmVtYWxlJTIwc2VjdXJpdHklMjBwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=100&q=60'
+      description: 'Former cybersecurity consultant now ensuring ironclad data privacy across all Indian state databases.',
+      imageUrl: '/kavita-rao.png',
     },
     {
-      name: 'David Kim',
+      name: 'Rohan Iyer',
       role: 'Lead Developer',
-      description: 'Full-stack developer passionate about creating seamless user experiences for RTO information lookup.',
-      imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWFsZSUyMGRldmVsb3BlciUyMHNtaWxpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=100&q=60'
+      description: 'The creative coder behind our sleek, user-first interface designed for intuitive vehicle number searches.',
+      imageUrl: '/rohan-iyer.png',
     },
   ];
 
@@ -80,8 +80,7 @@ const AboutPage = () => {
                 About VehicleLookup
               </h1>
               <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
-                We're revolutionizing how people access vehicle RTO information and registration details with cutting-edge technology, 
-                unmatched accuracy, and a commitment to user privacy and security for every vehicle number search.
+               At VehicleLookup, we're changing the way India accesses vehicle registration details and RTO information. Using advanced technology, deep data integrations, and a strong focus on user privacy, we help you uncover verified details of any vehicle—securely, instantly, and with zero guesswork.
               </p>
             </motion.div>
           </div>
@@ -105,8 +104,7 @@ const AboutPage = () => {
                       <h2 className="text-3xl font-bold text-gray-900">Our Mission</h2>
                     </div>
                     <p className="text-lg text-gray-600 leading-relaxed">
-                      To democratize access to vehicle RTO information by providing fast, accurate, and secure 
-                      vehicle number lookup services that empower individuals and businesses to make informed decisions about vehicle registration details.
+                     We aim to make vehicle number search in India seamless and secure. By offering lightning-fast access to RTO vehicle data, we empower everyday citizens, car buyers, transport businesses, and service providers to make confident, informed decisions.
                     </p>
                   </div>
 
@@ -118,8 +116,7 @@ const AboutPage = () => {
                       <h2 className="text-3xl font-bold text-gray-900">Our Vision</h2>
                     </div>
                     <p className="text-lg text-gray-600 leading-relaxed">
-                      To become the world's most trusted and comprehensive vehicle information platform for RTO details and vehicle number searches, 
-                      setting new standards for data accuracy, security, and user experience in accessing vehicle registration data.
+                     To become India's most trusted and intelligent platform for accessing vehicle registration information, by setting new benchmarks in data authenticity, user trust, and digital experience—one vehicle lookup at a time.
                     </p>
                   </div>
                 </div>
@@ -147,7 +144,7 @@ const AboutPage = () => {
                 Our Core Values
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                These principles guide everything we do, from RTO data handling to vehicle number search functionality, and shape how we serve our users.
+               Our values aren't just words—they guide every search, every feature, and every RTO data response we deliver
               </p>
             </div>
 
@@ -222,7 +219,7 @@ const AboutPage = () => {
                 Meet Our Team
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                The passionate individuals behind VehicleLookup's success in providing accurate RTO information and vehicle number search.
+               We are powered by a passionate team of Indian technologists, data engineers, and security experts who are committed to transparency in the auto ecosystem.
               </p>
             </div>
 
@@ -241,7 +238,7 @@ const AboutPage = () => {
                         className="mx-auto w-24 h-24 rounded-full object-cover mb-4" 
                         alt={`Portrait of ${member.name}, ${member.role} at VehicleLookup`} 
                         src={member.imageUrl}
-                       src="https://images.unsplash.com/photo-1500469835612-bbdd7aa966e7" />
+                      />
                       <CardTitle className="text-xl font-bold text-gray-900">{member.name}</CardTitle>
                       <CardDescription className="text-blue-600 font-semibold">{member.role}</CardDescription>
                     </CardHeader>
@@ -271,19 +268,13 @@ const AboutPage = () => {
               </h2>
               <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                 <p>
-                  VehicleLookup was born from a simple frustration: the difficulty of accessing reliable 
-                  vehicle RTO information and registration details quickly and securely. Our founders, experienced in automotive 
-                  technology and data systems, recognized the need for a comprehensive, user-friendly platform for vehicle number search.
+                  VehicleLookup began with a real-life hassle: trying to buy a second-hand bike in Pune and struggling to verify the seller's claims. This sparked the idea of creating an easy-to-use platform where anyone in India can search for vehicle registration details without navigating government portals or shady intermediaries.
                 </p>
                 <p>
-                  Since our launch in 2020, we've grown from a small startup to a trusted platform serving 
-                  hundreds of thousands of users monthly for their vehicle lookup needs. Our commitment to accuracy, security, and user 
-                  experience has made us the go-to choice for individuals and businesses alike seeking RTO information.
+                  Founded in 2020 by a team of Indian engineers and auto-tech veterans, VehicleLookup has grown from a small idea into a national platform helping lakhs of users each month. Whether you're in Delhi, Mumbai, Chennai, or a small town in Assam, we're here to provide the same trustworthy RTO information—fast and secure.
                 </p>
                 <p>
-                  Today, we continue to innovate and expand our services for vehicle number search and registration details, always keeping our users' needs 
-                  at the center of everything we do. We're not just a lookup service – we're your trusted 
-                  partner in making informed vehicle-related decisions with accurate RTO data.
+                  Our mission continues: simplifying India's access to reliable vehicle data, reducing fraud, and helping millions make smarter decisions.
                 </p>
               </div>
             </motion.div>

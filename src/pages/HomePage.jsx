@@ -29,18 +29,18 @@ const HomePage = () => {
   const features = [
     {
       icon: Database,
-      title: 'Comprehensive Database',
-      description: 'Access detailed RTO information from our extensive vehicle database with real-time updates and accurate records for any vehicle number search.',
+      title: "Trusted Data Sources",
+      description: "We pull Indian vehicle registration data from official government records and verified databases to ensure the accuracy and legality of every detail.",
     },
     {
       icon: Zap,
-      title: 'Instant Results',
-      description: 'Get vehicle registration details in seconds with our lightning-fast search engine and optimized data retrieval.',
+      title: "Lightning-Fast Searches",
+      description: "Get complete vehicle registration details in just a few clicks—no waiting, no delays. Our system is optimized for fast, real-time data access.",
     },
     {
       icon: Shield,
-      title: 'Secure & Private',
-      description: 'Your vehicle number searches are protected with enterprise-grade security and complete privacy protection.',
+      title: "User-Friendly Interface",
+      description: "Designed with simplicity in mind. Whether you\'re on desktop or mobile, searching for a vehicle\'s registration info is intuitive and effortless.",
     },
   ];
 
@@ -53,20 +53,20 @@ const HomePage = () => {
 
   const faqs = [
     {
-      question: 'How accurate is the vehicle information for my RTO search?',
-      answer: 'Our database is updated in real-time and sourced from official government records, ensuring 99.9% accuracy for your vehicle number search.',
+      question: "What details can I find using this platform?",
+      answer: "You can access Indian vehicle registration details including owner's name, registration date, fuel type, chassis number, engine number (partially masked), RTO location, and insurance status.",
     },
     {
-      question: 'Is my vehicle number search history stored?',
-      answer: 'No, we prioritize your privacy. Search queries for vehicle registration details are not stored or tracked on our servers.',
+      question: "Is it legal to check someone else's vehicle registration information?",
+      answer: "Yes. As long as the data is accessed for lawful purposes such as buying a used car or verifying authenticity, it complies with regional regulations and privacy laws.",
     },
     {
-      question: 'What RTO information can I get about a vehicle?',
-      answer: 'You can access vehicle registration details, owner information, vehicle specifications, and insurance status by vehicle number.',
+      question: "Do I need to sign up to use the platform?",
+      answer: "No. You can perform basic vehicle registration checks without signing up. However, creating an account allows you to save reports and track your searches.",
     },
     {
-      question: 'How fast are the search results for vehicle RTO info?',
-      answer: 'Most vehicle number searches return results within 2-3 seconds thanks to our optimized infrastructure for RTO information retrieval.',
+      question: "How accurate is the vehicle data provided?",
+      answer: "Our data is updated regularly and fetched from official government and transport department sources, ensuring high accuracy and reliability.",
     },
   ];
 
@@ -85,14 +85,13 @@ const HomePage = () => {
                 transition={{ duration: 0.8 }}
               >
                 <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                  Find Vehicle Information
+                  #1 Vehicle Registration Details
                   <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">
-                    Instantly
+                     Platform
                   </span>
                 </h1>
                 <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-                  Get comprehensive vehicle details and RTO information with our advanced lookup system. 
-                  Fast, accurate, and secure vehicle registration data at your fingertips by vehicle number search.
+                 Easily access accurate vehicle registration details in seconds. Our smart platform brings you instant insights into vehicle ownership, registration status, and more—all from a trusted and secure source.
                 </p>
               </motion.div>
 
@@ -106,7 +105,7 @@ const HomePage = () => {
                 <div className="flex flex-col sm:flex-row gap-4 p-2 bg-white/10 backdrop-blur-lg rounded-2xl border border-white/20">
                   <Input
                     type="text"
-                    placeholder="Enter vehicle number (e.g., PB65AM0008)"
+                    placeholder="MH01AZ0000"
                     aria-label="Vehicle Number Input"
                     value={vehicleNumber}
                     onChange={(e) => setVehicleNumber(e.target.value)}
@@ -148,7 +147,7 @@ const HomePage = () => {
                 Why Choose Our Vehicle Lookup?
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Experience the most advanced vehicle information system for RTO details and vehicle number search, with cutting-edge technology and unmatched reliability.
+               Our vehicle registration details platform is built for speed, reliability, and transparency. Whether you're a buyer, seller, or just curious, our system ensures you get verified and up-to-date information every time.
               </p>
             </div>
 
@@ -190,28 +189,28 @@ const HomePage = () => {
                 How It Works
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Get vehicle RTO information and registration details in three simple steps with our streamlined vehicle number search process.
+               Finding a vehicle's registration details has never been easier. Just follow these three steps with our streamlined vehicle number search process.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  step: '01',
-                  title: 'Enter Vehicle Number',
-                  description: 'Simply type in the vehicle registration number you want to lookup for RTO details.',
+                  step: "01",
+                  title: "Enter Vehicle Number",
+                  description: "Input the vehicle\'s registration number into our search bar. We support all standard formats for cars, bikes, and commercial vehicles.",
                   icon: Car,
                 },
                 {
-                  step: '02',
-                  title: 'Instant Search',
-                  description: 'Our system searches through millions of RTO records in real-time for your vehicle number.',
+                  step: "02",
+                  title: "Instant Search",
+                  description: "Our backend instantly scans government and transport department records to retrieve complete registration details.",
                   icon: Search,
                 },
                 {
-                  step: '03',
-                  title: 'Get Results',
-                  description: 'Receive comprehensive vehicle information and registration details within seconds.',
+                  step: "03",
+                  title: "View Results Instantly",
+                  description: "Within seconds, you\'ll receive the full vehicle registration report, including owner name, registration date, fuel type, and more.",
                   icon: CheckCircle,
                 },
               ].map((item, index) => {
@@ -252,7 +251,7 @@ const HomePage = () => {
                 Frequently Asked Questions
               </h2>
               <p className="text-xl text-gray-600">
-                Find answers to common questions about our vehicle lookup service, RTO information, and vehicle number search.
+               Got questions? We've got answers. Here are some common queries about using our vehicle registration details platform—answered clearly to help you.
               </p>
             </div>
 

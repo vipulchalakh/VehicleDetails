@@ -13,46 +13,74 @@ import DisclaimerPage from '@/pages/DisclaimerPage';
 
 const PageMeta = () => {
   const location = useLocation();
-  const siteUrl = "https://example.com";
+  const siteUrl = "https://vehicleregistrationdetail.com";
   const canonicalUrl = `${siteUrl}${location.pathname}${location.search}`;
 
-  let title = "VehicleLookup - Instant Vehicle Information";
-  let description = "Find comprehensive vehicle details, RTO information, and registration data instantly with VehicleLookup's advanced search system.";
-  
+  let title = "Vehicle Registration Lookup | Fast RTO Search India";
+  let description = "Lookup Indian vehicle registration details instantly. Fast, secure, and accurate RTO search for cars, bikes, and commercial vehicles.";
   const path = location.pathname;
 
   if (path === "/") {
-    title = "VehicleLookup - Instant Vehicle Information Search";
-    description = "Get comprehensive vehicle details with our advanced lookup system. Fast, accurate, and secure RTO vehicle information at your fingertips.";
+    title = "Vehicle Registration Lookup | Fast RTO Search India";
+    description = "Lookup Indian vehicle registration details instantly. Fast, secure, and accurate RTO search for cars, bikes, and commercial vehicles.";
   } else if (path === "/about") {
-    title = "About VehicleLookup | Our Mission and Values";
-    description = "Learn about VehicleLookup, our mission to democratize vehicle information access, and our commitment to accuracy and user privacy.";
+    title = "About Us | Trusted Vehicle Registration Platform";
+    description = "Learn about our mission to provide reliable, up-to-date vehicle registration and RTO information for users across India.";
   } else if (path === "/contact") {
-    title = "Contact VehicleLookup | Get Support";
-    description = "Have questions? Contact VehicleLookup support for assistance with our vehicle number search and RTO information services.";
+    title = "Contact Us | Vehicle Registration Support";
+    description = "Get in touch for support, feedback, or partnership inquiries related to vehicle registration and RTO lookup services.";
   } else if (path === "/privacy-policy") {
-    title = "Privacy Policy | VehicleLookup";
-    description = "Read VehicleLookup's privacy policy to understand how we collect, use, and protect your personal data and vehicle search information.";
+    title = "Privacy Policy | Data Protection & Security";
+    description = "Read our privacy policy to understand how we protect your data and ensure secure vehicle registration searches.";
   } else if (path === "/search") {
     const vehicleParam = new URLSearchParams(location.search).get('vehicle');
     if (vehicleParam) {
-      title = `Vehicle Details for ${vehicleParam} | VehicleLookup`;
-      description = `Find RTO information, owner details, and registration data for vehicle number ${vehicleParam}. Fast and accurate vehicle lookup.`;
+      title = `Vehicle Details for ${vehicleParam} | RTO Lookup India`;
+      description = `Get RTO and registration details for vehicle number ${vehicleParam}. Fast, secure, and accurate vehicle lookup.`;
     } else {
-      title = "Vehicle Search | Find RTO Information | VehicleLookup";
-      description = "Search for vehicle registration details, RTO information, owner data, and more using our advanced vehicle number lookup.";
+      title = "Search Vehicle Registration | Instant RTO Info";
+      description = "Search for Indian vehicle registration details and RTO information by entering a vehicle number. Accurate and fast results.";
     }
   } else if (path === "/terms-of-service") {
-    title = "Terms of Service | VehicleLookup";
-    description = "Review the Terms of Service for using VehicleLookup. Understand your rights and responsibilities when accessing our vehicle information platform.";
+    title = "Terms of Service | Vehicle Registration Lookup";
+    description = "Review our terms of service for using the vehicle registration lookup platform and RTO search features.";
   } else if (path === "/cookie-policy") {
-    title = "Cookie Policy | VehicleLookup";
-    description = "Learn about how VehicleLookup uses cookies to enhance your browsing experience and provide personalized vehicle search services.";
+    title = "Cookie Policy | Vehicle Registration Lookup";
+    description = "Learn how we use cookies to enhance your experience on our vehicle registration and RTO lookup platform.";
   } else if (path === "/disclaimer") {
-    title = "Disclaimer | VehicleLookup";
-    description = "Read the disclaimer for VehicleLookup. Important information regarding the use of our vehicle lookup service and the data provided.";
+    title = "Disclaimer | Vehicle Registration Lookup";
+    description = "Read our disclaimer regarding the accuracy and use of vehicle registration and RTO information provided on our platform.";
   }
 
+  // Global WebSite schema
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Vehicle Registration Lookup",
+    "url": siteUrl + "/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": `${siteUrl}/search?vehicle={search_term_string}`,
+      "query-input": "required name=search_term_string"
+    }
+  };
+
+  // Global Organization schema
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "VehicleLookup",
+    "alternateName": "Vehicle Registration Detail",
+    "url": "https://vehicleregistrationdetail.com/",
+    "logo": "https://vehicleregistrationdetail.com/vs%20favicon.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+918766994595",
+      "contactType": "technical support",
+      "areaServed": "IN",
+      "availableLanguage": ["en", "Hindi"]
+    }
+  };
 
   return (
     <Helmet>
@@ -64,28 +92,12 @@ const PageMeta = () => {
       <meta property="og:description" content={description} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="VehicleLookup" />
+      <meta property="og:site_name" content="Vehicle Registration Lookup" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      {path === "/" && (
-         <script type="application/ld+json">{`
-          {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "VehicleLookup",
-            "url": "${siteUrl}",
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "${siteUrl}/search?vehicle={search_term_string}"
-              },
-              "query-input": "required name=search_term_string"
-            }
-          }
-        `}</script>
-      )}
+      <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
+      <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
     </Helmet>
   );
 };
