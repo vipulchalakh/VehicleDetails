@@ -106,17 +106,16 @@ const PageMeta = () => {
 function App() {
   return (
     <Router>
-      <PageMeta />
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/privacy-policy" element={<PrivacyPage />} />
-          <Route path="/search" element={<SearchPage />} />
-          <Route path="/terms-of-service" element={<TermsOfServicePage />} />
-          <Route path="/cookie-policy" element={<CookiePolicyPage />} />
-          <Route path="/disclaimer" element={<DisclaimerPage />} />
+          <Route path="/" element={<><PageMeta /><HomePage /></>} />
+          <Route path="/about" element={<><PageMeta /><AboutPage /></>} />
+          <Route path="/contact" element={<><PageMeta /><ContactPage /></>} />
+          <Route path="/privacy-policy" element={<><PageMeta /><PrivacyPage /></>} />
+          <Route path="/search" element={<><PageMeta /><SearchPage /></>} />
+          <Route path="/terms-of-service" element={<><PageMeta /><TermsOfServicePage /></>} />
+          <Route path="/cookie-policy" element={<><PageMeta /><CookiePolicyPage /></>} />
+          <Route path="/disclaimer" element={<><PageMeta /><DisclaimerPage /></>} />
         </Routes>
         <Toaster />
       </div>
